@@ -1,0 +1,40 @@
+{
+  "name": "brilliancy",
+  "version": "1.0.0",
+  "description": "brilliancy project",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "cross-env NODE_ENV=production nodemon server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "build": "npm run build --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^7.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "client": "file:client",
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "handlebars": "^4.7.6",
+    "hbs": "^4.1.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.11",
+    "mongoose-unique-validator": "^2.0.3",
+    "nodemailer": "^6.4.6",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "react-dropzone": "^11.0.1",
+    "react-slick": "^0.26.1",
+    "validator": "^10.9.0"
+  }
+}
